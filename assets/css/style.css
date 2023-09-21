@@ -12,6 +12,7 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
+img,
 video {
   width: 100%;
 }
@@ -53,12 +54,18 @@ h6 {
 
 .back-to-top i {
   font-size: 28px;
-  color: var(--hover_color)fff;
+  color: var(--hover_color);
+  background-color: var(--primary_color);
   line-height: 0;
+  transition: 0.7s ease;
 }
 
 .back-to-top:hover {
-  background: #151515;
+  border: 3px solid var(--primary_color);
+  background-color: var(--hover_color);
+}
+.back-to-top:hover i {
+  color: var(--hover_color) !important;
 }
 
 .back-to-top:hover i {
@@ -263,7 +270,7 @@ h6 {
 
 #hero #hero-box ul li h2 {
   font-family: "Poppins", sans-serif;
-  color: var(--hover_color)fff;
+  color: var(--hover_color) fff;
   font-size: 2em;
 }
 
@@ -472,7 +479,10 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(#02020280, #00000080);
+  background: linear-gradient(#02020280, #00000080), url(../img/book.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 60px 0;
 }
 
