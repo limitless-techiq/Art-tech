@@ -121,7 +121,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: var(--hover_color)fff80 !important;
+  background: #ffffff80 !important;
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
