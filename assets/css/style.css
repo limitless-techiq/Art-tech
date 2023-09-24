@@ -274,9 +274,16 @@ h6 {
   font-size: 2em;
 }
 
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
+@media (min-width: 2000px) {
+  #hero #hero-box ul li h1 {
+    font-size: 7em !important;
+  }
+  #hero #hero-box ul li h2 {
+    font-size: 5em !important;
+  }
+  #hero #hero-box ul li h4,
+  #hero #hero-box ul li h3 {
+    font-size: 5em !important;
   }
 }
 @media (min-width: 1800px) {
@@ -297,16 +304,9 @@ h6 {
     font-size: 3em !important;
   }
 }
-@media (min-width: 2000px) {
-  #hero #hero-box ul li h1 {
-    font-size: 7em !important;
-  }
-  #hero #hero-box ul li h2 {
-    font-size: 5em !important;
-  }
-  #hero #hero-box ul li h4,
-  #hero #hero-box ul li h3 {
-    font-size: 5em !important;
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
   }
 }
 @media (max-width: 768px) {
@@ -335,7 +335,7 @@ h6 {
   }
   #hero #hero-box ul li h1,
   #hero #hero-box ul li h2 {
-    font-size: 1em !important;
+    font-size: 1.5em !important;
   }
   #hero #hero-box ul:last-child {
     /* display: none; */
