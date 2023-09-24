@@ -385,6 +385,14 @@ section {
   font-family: "Poppins", sans-serif;
   color: #151515;
 }
+@media (min-width: 2000px) {
+  .section-title h2 {
+    font-size: 3em;
+  }
+  .section-title p {
+    font-size: 7em;
+  }
+}
 
 /*--------------------------------------------------------------
 # About
@@ -395,11 +403,17 @@ section {
   font-size: 28px;
   font-family: "Poppins", sans-serif;
 }
-
 .about .content p:last-child {
   margin-bottom: 0;
 }
-
+@media (min-width: 2000px) {
+  .about .content h3 {
+    font-size: 7em;
+  }
+  .about .content p {
+    font-size: 2em;
+  }
+}
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
@@ -446,7 +460,14 @@ section {
   background-size: cover;
   min-height: 400px;
 }
-
+@media (min-width: 2000px) {
+  .features .icon-box h4 {
+    font-size: 7em;
+  }
+  .features .icon-box ul li {
+    font-size: 2em;
+  }
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
