@@ -239,20 +239,23 @@ h6 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0.5;
+  opacity: 1;
 }
 #hero .container {
+  max-width: 95% !important;
   position: relative;
   padding-top: 74px;
   text-align: center;
 }
 #hero #hero-box ul {
-  width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
   list-style: none;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 #hero #hero-box ul li {
   color: var(--hover_color);
@@ -288,10 +291,7 @@ h6 {
 }
 @media (min-width: 1800px) {
   .container {
-    max-width: 90% !important;
-  }
-  #hero .container {
-    max-width: 90% !important;
+    max-width: 95% !important;
   }
   #hero #hero-box ul li h1 {
     font-size: 5em !important;
@@ -312,6 +312,9 @@ h6 {
 @media (max-width: 768px) {
   #hero {
     height: auto;
+  }
+  #hero .heroVideo {
+    width: 500px !important;
   }
   #hero .container {
     padding: 0 !important;
@@ -335,7 +338,7 @@ h6 {
   }
   #hero #hero-box ul li h1,
   #hero #hero-box ul li h2 {
-    font-size: 1.5em !important;
+    font-size: 2em !important;
   }
   #hero #hero-box ul:last-child {
     /* display: none; */
@@ -347,7 +350,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 40px 0;
   overflow: hidden;
 }
 
@@ -400,7 +403,7 @@ section {
 .about .content h3 {
   color: var(--primary_color);
   font-weight: 700;
-  font-size: 28px;
+  font-size: 1.8em;
   font-family: "Poppins", sans-serif;
 }
 .about .content p:last-child {
